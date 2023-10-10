@@ -21,7 +21,7 @@ public class RespBean {
     private String message;
 
     /* 返回的对象 */
-    private Object object;
+    private Object data;
 
     /**
      * @param message 返回的消息
@@ -64,7 +64,6 @@ public class RespBean {
     public static RespBean success(ResponseEnum responseEnum, Object object) {
         return new RespBean(responseEnum.getCode(), responseEnum.getMessage(), object);
     }
-
 
     /**
      * @param message 返回的消息
